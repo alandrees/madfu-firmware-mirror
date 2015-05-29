@@ -14,6 +14,18 @@ Supported devices:
 
 The project page is <http://usb-midi-fw.sourceforge.net/>.
 
+Updated Firmware
+------------------
+I have added the updated transit firmware, the ma006101.bin, and created a branch (ma006101-mod) to test with.
+
+I'm not sure if there are more updated firmwares for the supported hardware.
+
+Patches
+------------
+The following patches are already applied to this source tree (from the debian package source):
+    42-madfuload-rules.patch
+    configure.ac.patch
+    fix-64-bit-implicit-declarations.patch
 
 Prerequisites
 -------------
