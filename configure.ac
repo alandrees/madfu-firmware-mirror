@@ -7,7 +7,7 @@ AC_CONFIG_SRCDIR(madfuload.c)
 AC_PROG_CC
 
 AC_MSG_CHECKING([for udev version])
-udev_ver=`udevinfo -V | awk '{ print $3 }'`
+udev_ver=`udevadm --version`
 if test -n "$udev_ver"; then
   AC_MSG_RESULT([$udev_ver])
 else
