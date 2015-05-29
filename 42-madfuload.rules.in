@@ -10,7 +10,7 @@ ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0
 # Sonica
 ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0763", ATTRS{idProduct}=="2805", RUN+="@sbindir@/madfuload -l -n -f @firmwaredir@/ma005101.bin -D $env{DEVNAME}"
 # Transit
-ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0763", ATTRS{idProduct}=="2806", RUN+="@sbindir@/madfuload -l -3 -f @firmwaredir@/ma006100.bin -D $env{DEVNAME}"
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0763", ATTRS{idProduct}=="2806", RUN+="@sbindir@/madfuload -l -3 -f @firmwaredir@/ma006101.bin -D $env{DEVNAME}"
 # Ozone
 ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0763", ATTRS{idProduct}=="2808", RUN+="@sbindir@/madfuload -l -3 -f @firmwaredir@/ma008100.bin -D $env{DEVNAME}"
 
