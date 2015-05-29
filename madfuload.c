@@ -16,7 +16,8 @@
 #include <fcntl.h>
 #include <getopt.h>
 #include <syslog.h>
-#include <linux/ioctl.h>
+#include <sys/ioctl.h>
+#include <string.h>
 
 /* USB stuff -- we can't rely on all Linux headers being there */
 
