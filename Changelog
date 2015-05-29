@@ -1,0 +1,59 @@
+Version 1.2
+  * configure.ac:
+    check for minimum required udev version
+
+Version 1.1
+  * 42-madfuload.rules.in:
+    for compatibility with older udev versions, removed GOTO optimization 
+
+Version 1.0
+  added firmware files
+  added udev support, removed hotplug support
+
+Version 0.9
+  * configure.ac, madfuload.c:
+    define symbols directly (again) because there are too many broken or
+    missing USB header files out there
+  * madfuload.c:
+    rename the log() function to avoid conflicts with log()
+  * Makefile.am:
+    use /etc instead of $sysconfdir to prevent autoconf from putting it
+    below /usr
+
+Version 0.8
+  * configure.ac, madfuload.c:
+    check which member names in struct usbdevfs_ctrltransfer to use
+    (last fix broke on Slackware)
+
+Version 0.7
+  * madfuload.c:
+    adjust wrong member names in struct usbdevfs_ctrltransfer
+
+Version 0.6
+  * madfuload.c:
+    use symbols from the Linux header files instead of defining them
+    directly (and getting them wrong on 64-bit systems)
+
+Version 0.5
+  * configure.ac, maudio_dfu.in, README:
+    changed MobilePre firmware file name to ma004103.bin
+
+Version 0.4
+  * madfuload.c:
+    change data types for compatibility with 64-bit-integer systems
+
+Version 0.3
+  * madfuload.c:
+    fix wrong order of value/index parameters in calls to usb_control()
+
+Version 0.2
+  * README:
+    mention minimum kernel version requirement to avoid USB reset problems
+  * configure.ac, acinclude.m4:
+    rewrite MADFU_CHECK_FWFILE macro
+  * madfuload.c:
+    retry control transfers
+    add some warning messages
+
+Version 0.1
+  first version, not released
